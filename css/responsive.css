@@ -1,22 +1,17 @@
-body{
-    margin: 0;
-}
+
 .contenedor {
     background-image: url("../img/header.jpg");
     background-size: cover;
     background-position: center;
-    padding: 100px;
+    padding: 200px;
+    height: 300px; 
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: x-large;
 }
 .centrar {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-}
-.row2 {
-    width: 100%;
-    clear: both; 
 }
 .container {
     display: grid;
@@ -25,7 +20,7 @@ body{
     grid-gap: 10px;    
 }
 .item img {
-    width: 65%;
+    width: 60%;
     height: auto;
 }
 .centrar2 {
@@ -34,52 +29,53 @@ body{
     color: white;
     background-color: rgba(2, 124, 118, 0.893);
     width: 100%;
-    height: 100%;
 }
 .row {
-    width: 100%;
-    clear: both; 
+    height: 100%;
+    clear:both 
 }
 .column-50 {
     width: 50%;
     float: left; 
     font-family: 'Montserrat', sans-serif;
 }
-#texto{
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-}
 .column-img {
     float: right;
 }
-.column33{
+ .column33{
     width: 33%;
-    float: left;
-}
-#row2{
     font-family: 'Montserrat', sans-serif;
-    background-color: rgba(40, 38, 38, 0.153);
+    float: left;
 }
 #color{
     color:white;
 }
-#footer{
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}  
+#row2{
+   width: 100%;
+   height: 200px;
+   background-color: rgba(0, 0, 0, 0.529);
+   font-family: 'Montserrat', sans-serif;
+}
 iframe{
     width: 600px; 
     height: 450px;
 }
 @media screen and (max-width: 600px) {
     .contenedor {
+        padding: 100px;
+        height: 200px;
         font-size: 20px;
-        text-align: center;
+    }
+    .container {
+        width: 45%;
+        display: grid
+        ;   
+    }
+    .row{
+        width: 100%;
     }
     .item img {
-        width: 33%;
+        width: 100%;
         display: grid;
     }
     .column-50 {
@@ -97,8 +93,16 @@ iframe{
     }
     .column33{
         width: 100%;
-    }    
+    }   
+    #row2{
+        width: 100%;
+        height: 290px;
+    } 
     #footer{
         width: 100%;
+    }
+    iframe{
+        width: 450px; 
+        height: 350px;
     }
 }
