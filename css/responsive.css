@@ -54,15 +54,16 @@ body{
 }
 .column33{
     width: 33%;
-    height: auto;
-    font-family: 'Montserrat', sans-serif;
     float: left;
+}
+#row2{
+    font-family: 'Montserrat', sans-serif;
     background-color: rgba(40, 38, 38, 0.153);
 }
 #color{
     color:white;
 }
-footer{
+#footer{
     background-color: #000000;
     color: #ffffff;
     text-align: center;
@@ -96,9 +97,8 @@ iframe{
     }
     .column33{
         width: 100%;
-        height: auto;
-        font-family: 'Montserrat', sans-serif;
-        float: left;
-        background-color: rgba(47, 47, 47, 0.153);
     }    
+    #footer{
+        width: 100%;
+    }
 }
